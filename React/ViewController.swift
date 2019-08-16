@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocalizedStrings()
+        configureDatePicker()
     }
 }
 
@@ -33,6 +34,11 @@ private extension ViewController {
         
         beginDateHeaderLabel.text = NSLocalizedString("schedule_beginheader", comment: "")
         endDateHeaderLabel.text = NSLocalizedString("schedule_endheader", comment: "")
+    }
+    
+    private func configureDatePicker() {
+        //Sets minimum date to today
+        datePicker.minimumDate = Date()
     }
 }
 
