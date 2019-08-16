@@ -13,6 +13,7 @@
 		AC633BF32306A7240078CF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC633BF22306A7240078CF7E /* Assets.xcassets */; };
 		AC633BF62306A7240078CF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC633BF42306A7240078CF7E /* LaunchScreen.storyboard */; };
 		AC633C012306A7240078CF7E /* ReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC633C002306A7240078CF7E /* ReactTests.swift */; };
+		AC633C0C2306AE400078CF7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC633C0B2306AE400078CF7E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AC633BFC2306A7240078CF7E /* ReactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC633C002306A7240078CF7E /* ReactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactTests.swift; sourceTree = "<group>"; };
 		AC633C022306A7240078CF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC633C0B2306AE400078CF7E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				AC633BF22306A7240078CF7E /* Assets.xcassets */,
 				AC633BF42306A7240078CF7E /* LaunchScreen.storyboard */,
 				AC633BF72306A7240078CF7E /* Info.plist */,
+				AC633C0B2306AE400078CF7E /* Localizable.strings */,
 			);
 			path = React;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC633BF62306A7240078CF7E /* LaunchScreen.storyboard in Resources */,
+				AC633C0C2306AE400078CF7E /* Localizable.strings in Resources */,
 				AC633BF32306A7240078CF7E /* Assets.xcassets in Resources */,
 				AC633BF12306A7230078CF7E /* Main.storyboard in Resources */,
 			);

@@ -21,9 +21,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setLocalizedStrings()
     }
+}
 
-
+private extension ViewController {
+    //MARK: - Configure view
+    private func setLocalizedStrings() {
+        title = NSLocalizedString("schedule_title", comment: "")
+        clearDateBarButtonItem.title = NSLocalizedString("schedule_cleardatebarbutton", comment: "")
+        
+        beginDateHeaderLabel.text = NSLocalizedString("schedule_beginheader", comment: "")
+        endDateHeaderLabel.text = NSLocalizedString("schedule_endheader", comment: "")
+    }
 }
 
