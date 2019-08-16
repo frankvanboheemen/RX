@@ -90,6 +90,14 @@
                     <navigationItem key="navigationItem" id="TX3-2L-Voi">
                         <barButtonItem key="rightBarButtonItem" title="Clear" id="jO0-bJ-Zeh"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="beginDateHeaderLabel" destination="hLp-Lk-E4K" id="5w3-mW-zqf"/>
+                        <outlet property="beginDateLabel" destination="Nkv-pV-Zbl" id="duO-WR-47c"/>
+                        <outlet property="clearDateBarButtonItem" destination="jO0-bJ-Zeh" id="jh0-dN-YEc"/>
+                        <outlet property="datePicker" destination="sfe-xZ-1DS" id="PsH-wN-Yg0"/>
+                        <outlet property="endDateHeaderLabel" destination="zfc-4Y-dy2" id="3Sj-l1-QaU"/>
+                        <outlet property="endDateLabel" destination="Fkk-Xv-n7m" id="WAj-mt-sJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

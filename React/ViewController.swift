@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var clearDateBarButtonItem: UIBarButtonItem!
+    
+    @IBOutlet weak var beginDateHeaderLabel: UILabel!
+    @IBOutlet weak var beginDateLabel: UILabel!
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    @IBOutlet weak var endDateHeaderLabel: UILabel!
+    @IBOutlet weak var endDateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
