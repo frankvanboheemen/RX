@@ -53,8 +53,13 @@ private extension ViewController {
     //MARK: - RX Setup
     private func setupObservers() {
         datePicker.rx.date.changed.subscribe(onNext: { [unowned self] in
-            guard let beginDateString = self.dateFormatter?.string(from: $0) else { return }
+            guard let beginDateString = self.dateFormatter?.string(from: $0),
+            let endDate = NSCalendar.current.date(byAdding: .day, value: 7, to: $0),
+            let endDateString = self.dateFormatter?.string(from: endDate) else { return }
+           
             self.beginDateLabel.text = beginDateString
+            self.endDateLabel.text = endDateString
+            
         }).disposed(by: disposeBag)
     }
 }
