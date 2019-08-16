@@ -10,3 +10,4 @@
 "schedule_cleardatebarbutton" = "Clear";
 "schedule_beginheader" = "Begin:";
 "schedule_endheader" = "End Date:";
+"today" = "Today";
