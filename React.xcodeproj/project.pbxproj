@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103699ECE4FD51185645216E /* Pods_React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324684D0CCF7BCA780114E04 /* Pods_React.framework */; };
 		AC633BEC2306A7230078CF7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC633BEB2306A7230078CF7E /* AppDelegate.swift */; };
 		AC633BEE2306A7230078CF7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC633BED2306A7230078CF7E /* ViewController.swift */; };
 		AC633BF12306A7230078CF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC633BEF2306A7230078CF7E /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		AC633BF62306A7240078CF7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC633BF42306A7240078CF7E /* LaunchScreen.storyboard */; };
 		AC633C012306A7240078CF7E /* ReactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC633C002306A7240078CF7E /* ReactTests.swift */; };
 		AC633C0C2306AE400078CF7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC633C0B2306AE400078CF7E /* Localizable.strings */; };
+		BD2C972C516744893ADE0977 /* Pods_ReactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD18D32816EDB7E9AAC0F018 /* Pods_ReactTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324684D0CCF7BCA780114E04 /* Pods_React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8C7F4A67FB5C3FB4D01FEA /* Pods-ReactTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactTests.release.xcconfig"; path = "Target Support Files/Pods-ReactTests/Pods-ReactTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC633BE82306A7230078CF7E /* React.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = React.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC633BEB2306A7230078CF7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC633BED2306A7230078CF7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,10 @@
 		AC633C002306A7240078CF7E /* ReactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactTests.swift; sourceTree = "<group>"; };
 		AC633C022306A7240078CF7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC633C0B2306AE400078CF7E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AD18D32816EDB7E9AAC0F018 /* Pods_ReactTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1BE64A5458DE5C758AB1995 /* Pods-React.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React.debug.xcconfig"; path = "Target Support Files/Pods-React/Pods-React.debug.xcconfig"; sourceTree = "<group>"; };
+		CA9DA3A74B941714181EC534 /* Pods-ReactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactTests/Pods-ReactTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EADA04710D4D88BE7520277A /* Pods-React.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React.release.xcconfig"; path = "Target Support Files/Pods-React/Pods-React.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103699ECE4FD51185645216E /* Pods_React.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2C972C516744893ADE0977 /* Pods_ReactTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9750590B9848CAC437859CEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE64A5458DE5C758AB1995 /* Pods-React.debug.xcconfig */,
+				EADA04710D4D88BE7520277A /* Pods-React.release.xcconfig */,
+				CA9DA3A74B941714181EC534 /* Pods-ReactTests.debug.xcconfig */,
+				5E8C7F4A67FB5C3FB4D01FEA /* Pods-ReactTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC633BDF2306A7230078CF7E = {
 			isa = PBXGroup;
 			children = (
 				AC633BEA2306A7230078CF7E /* React */,
 				AC633BFF2306A7240078CF7E /* ReactTests */,
 				AC633BE92306A7230078CF7E /* Products */,
+				9750590B9848CAC437859CEA /* Pods */,
+				F10D41F3854ABBB241BC6531 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,15 @@
 			path = ReactTests;
 			sourceTree = "<group>";
 		};
+		F10D41F3854ABBB241BC6531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				324684D0CCF7BCA780114E04 /* Pods_React.framework */,
+				AD18D32816EDB7E9AAC0F018 /* Pods_ReactTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC633C052306A7240078CF7E /* Build configuration list for PBXNativeTarget "React" */;
 			buildPhases = (
+				DDFFC0CC431CCE6353A4F2A7 /* [CP] Check Pods Manifest.lock */,
 				AC633BE42306A7230078CF7E /* Sources */,
 				AC633BE52306A7230078CF7E /* Frameworks */,
 				AC633BE62306A7230078CF7E /* Resources */,
+				989B04A68B708F9E5850685C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC633C082306A7240078CF7E /* Build configuration list for PBXNativeTarget "ReactTests" */;
 			buildPhases = (
+				4ABD65BD69BCFB833990D41F /* [CP] Check Pods Manifest.lock */,
 				AC633BF82306A7240078CF7E /* Sources */,
 				AC633BF92306A7240078CF7E /* Frameworks */,
 				AC633BFA2306A7240078CF7E /* Resources */,
@@ -195,6 +231,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ABD65BD69BCFB833990D41F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		989B04A68B708F9E5850685C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-React/Pods-React-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-React/Pods-React-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-React/Pods-React-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDFFC0CC431CCE6353A4F2A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-React-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC633BE42306A7230078CF7E /* Sources */ = {
@@ -362,6 +462,7 @@
 		};
 		AC633C062306A7240078CF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BE64A5458DE5C758AB1995 /* Pods-React.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +481,7 @@
 		};
 		AC633C072306A7240078CF7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADA04710D4D88BE7520277A /* Pods-React.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +500,7 @@
 		};
 		AC633C092306A7240078CF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA9DA3A74B941714181EC534 /* Pods-ReactTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +522,7 @@
 		};
 		AC633C0A2306A7240078CF7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E8C7F4A67FB5C3FB4D01FEA /* Pods-ReactTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
