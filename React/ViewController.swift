@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
     @IBOutlet weak var clearDateBarButtonItem: UIBarButtonItem!
@@ -19,10 +21,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var endDateHeaderLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
     
+    private let disposeBag = DisposeBag()
+    private var dateFormatter: DateFormatter?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setLocalizedStrings()
         configureDatePicker()
+        setupObservers()
+        setupDateFormatter(with: "d MMMM yyyy")
     }
 }
 
@@ -42,3 +49,20 @@ private extension ViewController {
     }
 }
 
+private extension ViewController {
+    //MARK: - RX Setup
+    private func setupObservers() {
+        datePicker.rx.date.changed.subscribe(onNext: { [unowned self] in
+            guard let beginDateString = self.dateFormatter?.string(from: $0) else { return }
+            self.beginDateLabel.text = beginDateString
+        }).disposed(by: disposeBag)
+    }
+}
+
+private extension ViewController {
+    //MARK: - DateFormatter Setup
+    private func setupDateFormatter(with format: String) {
+        dateFormatter = DateFormatter()
+        dateFormatter?.dateFormat = format
+    }
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,7 +76,6 @@
 				CA9DA3A74B941714181EC534 /* Pods-ReactTests.debug.xcconfig */,
 				5E8C7F4A67FB5C3FB4D01FEA /* Pods-ReactTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
