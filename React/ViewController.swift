@@ -70,6 +70,12 @@ private extension ViewController {
             self.beginDateLabel.text = beginDateString
             self.endDateLabel.text = endDateString
         }).disposed(by: disposeBag)
+        
+        clearDateBarButtonItem.rx.tap.bind { [unowned self] in
+            let newDate = Date()
+            self.datePicker.date = newDate
+            self.date.accept(newDate)
+        }.disposed(by: disposeBag)
     }
 }
 
