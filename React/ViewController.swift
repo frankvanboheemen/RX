@@ -21,7 +21,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var endDateHeaderLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
     
+    private let date: BehaviorRelay<Date?> = BehaviorRelay(value: nil)
     private let disposeBag = DisposeBag()
+    
     private var dateFormatter: DateFormatter?
 
     override func viewDidLoad() {
@@ -30,6 +32,9 @@ class ViewController: UIViewController {
         configureDatePicker()
         setupObservers()
         setupDateFormatter(with: "d MMMM yyyy")
+        
+        //Sets initial date to today
+        date.accept(Date())
     }
 }
 
@@ -53,13 +58,17 @@ private extension ViewController {
     //MARK: - RX Setup
     private func setupObservers() {
         datePicker.rx.date.changed.subscribe(onNext: { [unowned self] in
-            guard let beginDateString = self.dateFormatter?.string(from: $0),
-            let endDate = NSCalendar.current.date(byAdding: .day, value: 7, to: $0),
-            let endDateString = self.dateFormatter?.string(from: endDate) else { return }
-           
+            self.date.accept($0)
+        }).disposed(by: disposeBag)
+        
+        date.asObservable().subscribe(onNext: { [unowned self] in
+            guard let newDate = $0,
+                let beginDateString = self.dateFormatter?.string(from: newDate),
+                let endDate = NSCalendar.current.date(byAdding: .day, value: 7, to: newDate),
+                let endDateString = self.dateFormatter?.string(from: endDate) else { return }
+            
             self.beginDateLabel.text = beginDateString
             self.endDateLabel.text = endDateString
-            
         }).disposed(by: disposeBag)
     }
 }
